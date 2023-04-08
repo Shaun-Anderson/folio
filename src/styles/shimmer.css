@@ -1,0 +1,30 @@
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background-size: 100%;
+}
+
+.shimmer ::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 60px;
+  height: 100%;
+  top: 0;
+  left: -1000px;
+  filter: blur(10px);
+  transform: skewX(-30deg);
+}
+
+.shimmer:hover ::before {
+  animation: slide 1s;
+}
+
+@keyframes slide {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 500%;
+  }
+}

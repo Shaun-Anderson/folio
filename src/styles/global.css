@@ -1,0 +1,147 @@
+:root {
+  color-scheme: dark;
+
+  --grey0: #e5e5e5;
+  --grey1: #dbdbdb;
+  --grey2: #b3b3b3;
+  --grey3: #acacac;
+  --grey4: #9c9c9c;
+  --grey5: #6d6d6d;
+  --grey6: #2c2c2c;
+  --grey7: #3d3d3d;
+  --grey8: #232323;
+  --grey9: #161616;
+
+  --delay0: 50ms;
+  --delay1: 100ms;
+  --delay2: 150ms;
+  --delay3: 200ms;
+  --delay4: 250ms;
+  --delay5: 300ms;
+  --delay6: 350ms;
+  --delay7: 400ms;
+  --delay8: 450ms;
+  --delay9: 500ms;
+  --delay10: 550ms;
+  --delay11: 600ms;
+  --delay12: 650ms;
+  --delay13: 700ms;
+  --delay14: 750ms;
+  --delay15: 800ms;
+  --delay16: 850ms;
+  --delay17: 900ms;
+  --delay18: 950ms;
+  --delay19: 1000ms;
+
+  --fade: enter 0.6s both;
+  --fade-right: enter-right 0.6s both;
+
+  --wrapper: 675px;
+  --bar-padding: 40px;
+
+  --font-fallback: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  --font-display: "Inter", var(--font-fallback);
+  --font-sans: "Sohne", var(--font-fallback);
+  --font-mono: "Fira", monospace;
+}
+
+@font-face {
+  font-family: Inter;
+  font-display: block;
+  src: url(/fonts/inter.woff2) format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Fira;
+  font-display: block;
+  src: url(/fonts/fira_code.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Sohne;
+  font-display: block;
+  src: url(/fonts/sohne.woff2) format("woff2");
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+  height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+  touch-action: manipulation;
+}
+
+body {
+  color: var(--grey0);
+  background-color: var(--grey9);
+}
+
+main {
+  min-height: 100vh;
+  position: relative;
+  padding: 5rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-size: 16px;
+}
+
+p {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--grey4);
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes enter-right {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --wrapper: 90vw;
+    --bar-padding: 2vw;
+  }
+}
