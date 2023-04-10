@@ -5,6 +5,7 @@ const Contact = () => (
       <li style={{ listStyleType: "none" }}>
         <a
           href="https://github.com/Shaun-Anderson"
+          aria-label="GitHub link"
           className="social-link glow-on-hover"
         >
           <svg
@@ -21,6 +22,7 @@ const Contact = () => (
       <li style={{ listStyleType: "none" }}>
         <a
           href="https://twitter.com/_ShaunAnderson"
+          aria-label="Twitter link"
           className="social-link twitter-link"
         >
           <svg
@@ -35,7 +37,11 @@ const Contact = () => (
         </a>
       </li>
       <li style={{ listStyleType: "none" }}>
-        <a href="https://read.cv/ando" className="social-link shimmer">
+        <a
+          href="https://read.cv/ando"
+          aria-label="Read CV link"
+          className="social-link shimmer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"

@@ -44,7 +44,7 @@
     sans-serif;
 
   --font-display: "Inter", var(--font-fallback);
-  --font-sans: "Sohne", var(--font-fallback);
+  --font-sans: "DMSans", var(--font-fallback);
 }
 
 @font-face {
@@ -55,9 +55,9 @@
 }
 
 @font-face {
-  font-family: Sohne;
+  font-family: DMSans;
   font-display: block;
-  src: url(/fonts/sohne.woff2) format("woff2");
+  src: url(/fonts/DMSans.woff2) format("woff2");
   font-weight: 400;
 }
 
