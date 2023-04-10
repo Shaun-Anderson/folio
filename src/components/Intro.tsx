@@ -42,7 +42,7 @@ const Intro = () => {
         style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
       >
         <p className="intro">
-          <i>Building meaningful user interactions </i> on web, mobile & native
+          <i>Building meaningful user interactions </i> on web, mobile & desktop
           in <span className="location">Melbourne, Australia</span>. Currently{" "}
           <span style={{ fontSize: "0.8rem" }}>@ </span>
           Forage while freelancing by night.
@@ -138,8 +138,9 @@ const Intro = () => {
         </ul>
         <p className="animate-in" style={{ animationDelay: "var(--delay7)" }}>
           I like creating experiences, doesnt matter the platform. I want to
-          excel at creating a perfect user experience in all aspects. In my
-          spare time I like to draw, garden & exercise.
+          excel in all aspects of crafting a perfect user experience and am
+          trying to develop products that solve actual problems. In my spare
+          time I like to draw, garden & exercise.
         </p>
       </article>
     </section>
