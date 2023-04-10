@@ -3,13 +3,21 @@ h1 {
   font-weight: 400;
 }
 
-section {
-  padding: 1rem;
-  max-width: 640px;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .animate-in {
   animation: var(--fade);
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .intro {
@@ -18,6 +26,7 @@ section {
   animation-delay: var(--delay2);
 }
 
+/* Socials */
 .social-list {
   display: flex;
   gap: 1rem;
@@ -54,6 +63,12 @@ section {
   text-decoration: none;
 }
 
+.social-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .social-link:hover {
   scale: 1.05;
 }
@@ -61,6 +76,7 @@ section {
 .social-link:focus {
   scale: 1.05;
 }
+
 .twitter-link:hover {
   border-color: #1da1f2;
   color: #1da1f2;
@@ -71,6 +87,10 @@ section {
   outline: #1da1f2 auto 1px;
   box-shadow: 5px 5px #1da1f2;
 }
+.twitter-link:focus {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
 
 li:has(> a.twitter-link) {
   transition-property: all;
@@ -80,6 +100,13 @@ li:has(> a.twitter-link) {
 
 a.twitter-link:focus {
   transform: translate(-5px, -5px);
+}
+
+/* SVG hero animation */
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
 }
 
 .paths .path:nth-child(2) {
@@ -101,51 +128,18 @@ a.twitter-link:focus {
   animation-delay: 1.5s;
 }
 
+/* Logo animation  */
+
 .logo-path :nth-child(1) {
   stroke-dasharray: 1750;
   stroke-dashoffset: 100;
-  animation: test 1.5s linear forwards;
+  animation: logo-draw 1.5s linear forwards;
 }
 .logo-path :nth-child(2) {
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
-  animation: test 1s linear forwards;
-  animation-delay: 1.5s;
-}
-
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 2s linear forwards;
-}
-
-@keyframes test {
-  from {
-    stroke-dashoffset: 2000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.twitter-link:focus {
-  border-color: #1da1f2;
-  color: #1da1f2;
-}
-
-.social-link a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  animation: logo-draw 1s linear forwards;
+  animation-delay: 1s;
 }
 
 .container-title {
@@ -156,7 +150,30 @@ a.twitter-link:focus {
 }
 
 .now {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   animation: var(--fade-right);
+}
+
+/*Now happening*/
+
+.now-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.now p {
+  font-size: 0.9rem;
+}
+.now p span {
+  color: var(--grey1);
+}
+.now-container .now:nth-child(1) {
+  animation-delay: var(--delay6);
+}
+.now-container .now:nth-child(2) {
+  animation-delay: var(--delay8);
 }
 
 .craft-grid {
@@ -194,15 +211,6 @@ a.twitter-link:focus {
   color: var(--grey1);
   -webkit-text-decoration-color: var(--grey1);
   text-decoration-color: var(--grey1);
-}
-
-.btn:hover {
-  transition: 1s ease-in-out;
-  background: #4f95da;
-}
-
-.btn:hover svg {
-  stroke-dashoffset: -480;
 }
 
 .contact {

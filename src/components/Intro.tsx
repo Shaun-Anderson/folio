@@ -1,18 +1,10 @@
-import React from "react";
-import css from "../styles/home.css";
-import glowcss from "../styles/glow.css";
-import shimmercss from "../styles/shimmer.css";
+import "../styles/home.css";
+import "../styles/glow.css";
+import "../styles/shimmer.css";
 const Intro = () => {
   return (
     <section>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "1rem",
-          marginBottom: "2rem",
-        }}
-      >
+      <div className="header">
         <svg
           className="logo-path"
           width={18}
@@ -39,25 +31,15 @@ const Intro = () => {
         </svg>
         <h1>Shaun Anderson</h1>
       </div>
-      <article
-        style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
-      >
+      <article className="intro-container">
         <p className="intro">
           <i>Building meaningful user interactions </i> on web, mobile & desktop
           in <span className="location">Melbourne, Australia</span>. Currently{" "}
           <span style={{ fontSize: "0.8rem" }}>@ </span>
           Forage while freelancing by night.
         </p>
-        <ul style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-          <li
-            className="now"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "0.5rem",
-              animationDelay: "var(--delay6)",
-            }}
-          >
+        <ul className="now-container">
+          <li className="now">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -83,20 +65,11 @@ const Intro = () => {
                 stroke-width="16"
               />
             </svg>
-            <p style={{ fontSize: "0.9rem" }}>
-              Currently exploring:{" "}
-              <span style={{ color: "var(--grey1)" }}>AI, design & motion</span>
+            <p>
+              Currently exploring: <span>AI, design & motion</span>
             </p>
           </li>
-          <li
-            className="now"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "0.5rem",
-              animationDelay: "var(--delay8)",
-            }}
-          >
+          <li className="now">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -129,11 +102,8 @@ const Intro = () => {
                 stroke-width="16"
               />
             </svg>
-            <p style={{ fontSize: "0.9rem" }}>
-              Currently reading:{" "}
-              <span style={{ color: "var(--grey1)" }}>
-                "Build" by Tony Fadell
-              </span>
+            <p>
+              Currently reading: <span>"Build" by Tony Fadell</span>
             </p>
           </li>
         </ul>

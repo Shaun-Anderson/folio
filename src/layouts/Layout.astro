@@ -13,7 +13,7 @@ const { title, description } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/Untitled.svg" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <link
       rel="preload"
       href="/fonts/Inter.woff2"
@@ -29,7 +29,7 @@ const { title, description } = Astro.props;
       crossorigin
     />
     <meta name="generator" content={Astro.generator} />
-    <meta property="og:image" content="/Untitled.png" />
+    <meta property="og:image" content="/icon.png" />
     <!-- HTML Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -39,7 +39,7 @@ const { title, description } = Astro.props;
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/Untitled.png" />
+    <meta property="og:image" content="/icon.png" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +47,7 @@ const { title, description } = Astro.props;
     <meta property="twitter:url" content="https://www.ando.bio" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="/Untitled.png" />
+    <meta name="twitter:image" content="/icon.png" />
   </head>
   <body>
     <slot />
