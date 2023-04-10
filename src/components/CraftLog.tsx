@@ -22,17 +22,76 @@ const CraftLog = () => {
         <p style={{ fontSize: "0.8rem" }}>Random things I have worked on.</p>
       </div>
       <ul className="craft-grid">
-        <li className="craft">
-          <a href="">
-            <h4>roam.uno</h4>
+        <li className="" style={{ listStyleType: "none" }}>
+          <a href="" className="craft">
+            <img src="" alt="Thumbnail" />
+            <div style={{ display: "flex" }}>
+              <svg
+                width={18}
+                height={18}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none" />
+                <rect
+                  x="48"
+                  y="48"
+                  width="64"
+                  height="64"
+                  rx="8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+                <rect
+                  x="144"
+                  y="48"
+                  width="64"
+                  height="64"
+                  rx="8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+                <rect
+                  x="48"
+                  y="144"
+                  width="64"
+                  height="64"
+                  rx="8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+                <rect
+                  x="144"
+                  y="144"
+                  width="64"
+                  height="64"
+                  rx="8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+              </svg>
+              <h4>roam.uno (wip)</h4>
+            </div>
+            <p>Freelancing platform</p>
           </a>
-          <p>Freelancing platform</p>
         </li>
-        <li className="craft">
-          <a href="">
-            <h4>roam.uno</h4>
+        <li className="" style={{ listStyleType: "none" }}>
+          <a href="" className="craft">
+            <h4>roam.uno (wip)</h4>
+            <p>Freelancing platform</p>
           </a>
-          <p>Freelancing platform</p>
         </li>
       </ul>
     </section>

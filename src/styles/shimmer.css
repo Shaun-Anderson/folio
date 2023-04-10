@@ -2,6 +2,29 @@
   position: relative;
   overflow: hidden;
   background-size: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shimmer span {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  opacity: 0;
+  display: none;
+}
+
+.shimmer:hover span {
+  opacity: 1;
+  display: block;
+}
+.shimmer:focus span {
+  opacity: 1;
+  display: block;
 }
 
 .shimmer ::before {
@@ -17,6 +40,17 @@
 }
 
 .shimmer:hover ::before {
+  animation: slide 1s;
+}
+.shimmer:focus {
+  color: white;
+  outline: white auto 1px;
+}
+
+.shimmer:focus ::before {
+  animation: slide 1s;
+}
+.shimmer:focus-visible ::before {
   animation: slide 1s;
 }
 

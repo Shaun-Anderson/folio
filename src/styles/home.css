@@ -1,6 +1,7 @@
 h1 {
   /* text-decoration: underline; */
   animation: var(--fade);
+  margin-bottom: 2rem;
   /* font-weight: 400; */
   /* text-underline-offset: 8px; */
 }
@@ -8,24 +9,6 @@ h1 {
 section {
   padding: 1rem;
   max-width: 640px;
-}
-
-.path {
-  stroke-dasharray: 1;
-  animation-duration: 5s;
-  stroke-width: 10;
-  stroke: #000000;
-  fill: transparent;
-  animation-name: dash;
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 .animate-in {
@@ -43,17 +26,23 @@ section {
   gap: 1rem;
 }
 
-.social-list .social-link:nth-child(1) {
-  animation-delay: 0.15s;
+.social-list li {
+  animation: var(--fade);
 }
-.social-list .social-link:nth-child(2) {
-  animation-delay: 0.25s;
+
+.social-list li:nth-child(1) {
+  animation-delay: 0.5s;
 }
-.social-list .social-link:nth-child(3) {
-  animation-delay: 0.35s;
+.social-list li:nth-child(2) {
+  animation-delay: 0.75s;
+}
+.social-list li:nth-child(3) {
+  animation-delay: 1s;
 }
 
 .social-link {
+  display: flex;
+  position: relative;
   cursor: pointer;
   width: fit-content;
   height: fit-content;
@@ -61,16 +50,76 @@ section {
   padding: 0.5rem;
   border: 1px solid var(--grey7);
   border-radius: 0.75rem;
-  animation: var(--fade);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  color: var(--grey2);
+  text-decoration: none;
 }
+
 .social-link:hover {
   scale: 1.05;
 }
 
+.social-link:focus {
+  scale: 1.05;
+}
 .twitter-link:hover {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+.twitter-link:focus {
+  border-color: #1da1f2;
+  color: #1da1f2;
+  outline: #1da1f2 auto 1px;
+  box-shadow: 5px 5px #1da1f2;
+}
+
+li:has(> a.twitter-link) {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+a.twitter-link:focus {
+  transform: translate(-5px, -5px);
+}
+
+.paths .path:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.paths .path:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.paths .path:nth-child(4) {
+  animation-delay: 0.75s;
+}
+.paths .path:nth-child(5) {
+  animation-delay: 1s;
+}
+.paths .path:nth-child(6) {
+  animation-delay: 1.25s;
+}
+.paths .path:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.twitter-link:focus {
   border-color: #1da1f2;
   color: #1da1f2;
 }
@@ -104,6 +153,9 @@ section {
 }
 
 .craft {
+  color: inherit;
+  display: block;
+  text-decoration: none;
   border: 1px solid var(--grey7);
   border-radius: 0.5rem;
   cursor: pointer;
@@ -121,9 +173,9 @@ section {
 }
 .craft:hover a {
   text-decoration: underline;
-  color: var(--grey2);
-  -webkit-text-decoration-color: var(--grey5);
-  text-decoration-color: var(--grey5);
+  color: var(--grey1);
+  -webkit-text-decoration-color: var(--grey1);
+  text-decoration-color: var(--grey1);
 }
 
 .btn:hover {
@@ -133,4 +185,12 @@ section {
 
 .btn:hover svg {
   stroke-dashoffset: -480;
+}
+
+.contact {
+  animation: var(--fade);
+  animation-delay: var(--delay9);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

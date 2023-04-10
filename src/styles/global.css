@@ -45,7 +45,6 @@
 
   --font-display: "Inter", var(--font-fallback);
   --font-sans: "Sohne", var(--font-fallback);
-  --font-mono: "Fira", monospace;
 }
 
 @font-face {
@@ -53,13 +52,6 @@
   font-display: block;
   src: url(/fonts/inter.woff2) format("woff2");
   font-weight: 500;
-}
-
-@font-face {
-  font-family: Fira;
-  font-display: block;
-  src: url(/fonts/fira_code.woff2) format("woff2");
-  font-weight: 400;
 }
 
 @font-face {
@@ -101,6 +93,24 @@ main {
   justify-content: center;
 }
 
+footer {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+footer > div {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  white-space: nowrap;
+}
+
 h1,
 h2,
 h3,
@@ -113,8 +123,17 @@ h6 {
 
 p {
   font-family: var(--font-sans);
-  font-size: 16px;
+  font-size: 14px;
   color: var(--grey4);
+}
+span {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--grey4);
+}
+
+a {
+  color: inherit;
 }
 
 @keyframes enter {
