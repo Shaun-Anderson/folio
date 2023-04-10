@@ -5,7 +5,39 @@ import shimmercss from "../styles/shimmer.css";
 const Intro = () => {
   return (
     <section>
-      <h1 style={{ fontWeight: 400 }}>Shaun Anderson</h1>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "1rem",
+          marginBottom: "2rem",
+        }}
+      >
+        <svg
+          width={18}
+          viewBox="0 0 500 500"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke="currentColor"
+            stroke-width="40px"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+            d="M 48.079 442.741 C 117.713 447.05 356.971 444.294 454.683 443.625 C 497.662 339.863 310.073 54.891 231.536 54.891 C 152.999 54.891 0.28 327.346 48.079 442.741 Z"
+          />
+
+          <path
+            stroke="currentColor"
+            stroke-width="40px"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+            d="M 150.058 116.579 C 174.38 96.247 399.808 403.518 360.113 436.7"
+          />
+        </svg>
+        <h1 style={{ fontWeight: 400 }}>Shaun Anderson</h1>
+      </div>
       <article
         style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
       >

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-5.366" y="-4.347" width="518.819" height="629.121" style="stroke: rgb(0, 0, 0);"/>
+  <path style="stroke-linecap: round; stroke-linejoin: round; fill: rgba(216, 216, 216, 0); stroke-width: 40px; stroke: rgb(255, 255, 255);" d="M 58.606 432.693 C 124.61 436.777 351.394 434.165 444.013 433.53 C 484.751 335.178 306.941 65.062 232.499 65.062 C 158.056 65.062 13.299 323.313 58.606 432.693 Z"/>
+  <path style="stroke-linecap: round; stroke-linejoin: round; fill: rgba(216, 216, 216, 0); stroke-width: 40px; stroke: rgb(255, 255, 255);" d="M 155.268 123.534 C 178.322 104.262 391.998 395.514 354.373 426.966"/>
+</svg>
