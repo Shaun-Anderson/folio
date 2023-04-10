@@ -5,7 +5,6 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .shimmer span {
@@ -41,6 +40,10 @@
 
 .shimmer:hover ::before {
   animation: slide 1s;
+}
+.shimmer:hover {
+  color: white;
+  border: 1px solid white;
 }
 .shimmer:focus {
   color: white;
