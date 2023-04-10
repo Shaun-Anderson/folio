@@ -14,6 +14,7 @@ const Intro = () => {
         }}
       >
         <svg
+          className="logo-path"
           width={18}
           viewBox="0 0 500 500"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +37,7 @@ const Intro = () => {
             d="M 150.058 116.579 C 174.38 96.247 399.808 403.518 360.113 436.7"
           />
         </svg>
-        <h1 style={{ fontWeight: 400 }}>Shaun Anderson</h1>
+        <h1>Shaun Anderson</h1>
       </div>
       <article
         style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
