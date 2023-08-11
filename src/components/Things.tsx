@@ -53,6 +53,14 @@ const Things = () => (
           description="Freelance management without the stress."
         />
       </li>
+      <li>
+        <ThingCard
+          type="project"
+          link="https://rad-tiramisu-752209.netlify.app"
+          title="Calc"
+          description="Simple calculator built with svelte."
+        />
+      </li>
     </ul>
   </section>
 );
