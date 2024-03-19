@@ -8,13 +8,51 @@ h3 {
   animation-delay: var(--delay17);
 }
 
+.subheading {
+  font-weight: 100;
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  align-self: flex-end;
+}
+
 .mason {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, auto);
   grid-template-rows: masonry;
   gap: 1rem;
   animation: var(--fade);
   animation-delay: var(--delay19);
+}
+
+.wip::before {
+  z-index: -1;
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:-400%;
+  right:-800%;
+  /*we keep 0deg in the gradient*/
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 10px, var(--grey8) 10px, black 20px);
+  transform:skewX(var(--d,30deg));
+  animation: loading-slide 130s linear infinite;
+}
+
+@keyframes loading-slide {
+  to {
+    transform: translateX(-50%) skewX(var(--d,30deg));
+  }
+}
+
+.wip-badge {
+  font-family: var(--font-sans);
+  width: fit-content;
+  color: var(--grey9);
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  background-color: orange;
+  padding: 0.25rem .5rem;
 }
 
 .mason li {
@@ -22,13 +60,29 @@ h3 {
 }
 
 .thing-card {
+  font-family: var(--font-sans);
   transition: all;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   display: block;
   border-radius: 0.5rem;
-  padding: 1rem;
+  
   border: 1px solid var(--grey8);
   text-decoration: none;
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    display: flex;
+    gap: 0.5rem;
+
+    .details-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      flex-grow: 1;
+      padding: 1rem;
+    }
+  } 
 }
 
 /* .thing-card article {
@@ -50,4 +104,31 @@ h3 {
 
 .mason li {
   animation: var(--fade);
+}
+
+.thing-image-container {
+  width: 250px;
+}
+
+.thing-image {
+  object-position: left top;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.thing-badge-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  
+  .badge {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    border: 1px solid var(--grey7);
+    background: var(--grey8);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+  }
 }

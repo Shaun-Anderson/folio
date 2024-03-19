@@ -36,7 +36,7 @@ const Intro = () => {
           <i>Building meaningful user interactions </i> on web, mobile & desktop
           in <span className="location">Melbourne, Australia</span>. Currently{" "}
           <span style={{ fontSize: "0.8rem" }}>@ </span>
-          Forage while freelancing by night.
+          <a href="https://theforage.com">Forage</a> while freelancing by night.
         </p>
         <ul className="now-container">
           <li className="now">
