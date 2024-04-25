@@ -82,7 +82,7 @@ const Things = () => (
           badges={[
             "Svelte", "SvelteKit", "Rust", "Tauri", "Tailwind"
           ]}
-          img={{src: inkt.src, alt: "Screenshot of inkt app"}}
+          img={{src: inkt, alt: "Screenshot of inkt app"}}
           wip
         />
       </li>
@@ -95,7 +95,7 @@ const Things = () => (
           badges={[
             "React", "NextJS", "PlanetScale", "Tailwind", "TRPC"
           ]}
-          img={{src: solr.src, alt: "Screenshot of inkt app", pos: "bottom"}}
+          img={{src: solr, alt: "Screenshot of inkt app", pos: "bottom"}}
 
         />
       </li>
