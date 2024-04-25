@@ -82,20 +82,20 @@ const Things = () => (
           badges={[
             "Svelte", "SvelteKit", "Rust", "Tauri", "Tailwind"
           ]}
-          img={{src: inkt, alt: "Screenshot of inkt app"}}
+          img={{src: inkt.src, alt: "Screenshot of inkt app"}}
           wip
         />
       </li>
       <li>
         <ThingCard
-          link="https://solr.fyi"
-          title="Solr"
-          description="Freelance management without the stress."
+          link="https://breadd.app"
+          title="Breadd.app"
+          description="Invoice management for solo ventures."
           wip
           badges={[
             "React", "NextJS", "PlanetScale", "Tailwind", "TRPC"
           ]}
-          img={{src: solr, alt: "Screenshot of inkt app", pos: "bottom"}}
+          img={{src: solr.src, alt: "Screenshot of inkt app", pos: "bottom"}}
 
         />
       </li>
