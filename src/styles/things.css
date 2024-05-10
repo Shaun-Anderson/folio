@@ -11,17 +11,34 @@ h3 {
 .subheading {
   font-weight: 100;
   font-family: var(--font-sans);
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   align-self: flex-end;
 }
 
 .mason {
   display: grid;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(6, auto);
   grid-template-rows: masonry;
   gap: 1rem;
   animation: var(--fade);
   animation-delay: var(--delay19);
+}
+
+.col-3 {
+  grid-column: span 3 / span 3;
+}
+.col-6 {
+  grid-column: span 6 / span 6;
+}
+
+.art {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  border-radius: 0.5rem/* 8px */;
+  background-color: rgb(250 240 240 / 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wip::before {

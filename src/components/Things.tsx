@@ -1,6 +1,9 @@
 import "../styles/things.css";
 import inkt from "../assets/inkt-wip.webp"; // Image is 1600x900
+import mage from "../assets/mage.png"; // Image is 1600x900
 import solr from "../assets/solr-wip.webp"; // Image is 1600x900
+import Image from "astro/components/Image.astro";
+
 
 type ThingCardProps = {
   link: string;
@@ -12,6 +15,7 @@ type ThingCardProps = {
   compact?: boolean;
 };
 const ThingCard = (props: ThingCardProps) => {
+  
   const { link, title, description, badges, img, wip, compact } = props;
   return (
     <a className={`thing-card ${wip ? "wip" : ""}`} href={link}>
@@ -49,10 +53,10 @@ const Things = () => (
       >
         <path d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Zm0,177.57-51.77-32.35a8,8,0,0,0-8.48,0L72,209.57V48H184Z"></path>
       </svg>
-      Things <i className="subheading">Most things here are wip</i>
+      Things <i className="subheading">Projects, art and anything else I think of</i>
     </h3>
     <ul className="mason">
-    <li>
+    <li className="col-span-6">
         <ThingCard
           link="https://github.com/Shaun-Anderson/folio"
           title="folio"
@@ -63,7 +67,8 @@ const Things = () => (
           compact
         />
       </li>
-    <li>
+
+      <li className="col-span-3">
         <ThingCard
           link="https://figcv.com"
           title="figcv"
@@ -74,19 +79,10 @@ const Things = () => (
           wip
         />
       </li>
-      <li>
-      <ThingCard
-          link="https://twitter.com/ando_null/status/1767468325838487788"
-          title="inkt"
-          description="Writing companion for novelists and scriptwriters."
-          badges={[
-            "Svelte", "SvelteKit", "Rust", "Tauri", "Tailwind"
-          ]}
-          img={{src: inkt, alt: "Screenshot of inkt app"}}
-          wip
-        />
+      <li className="art">
+        <img src={mage.src} alt="A description of my image."/>
       </li>
-      <li>
+      <li className="col-span-3">
         <ThingCard
           link="https://breadd.app"
           title="Breadd.app"
@@ -99,6 +95,19 @@ const Things = () => (
 
         />
       </li>
+      <li className="col-span-6">
+      <ThingCard
+          link="https://twitter.com/ando_null/status/1767468325838487788"
+          title="inkt"
+          description="Writing companion for novelists and scriptwriters."
+          badges={[
+            "Svelte", "SvelteKit", "Rust", "Tauri", "Tailwind"
+          ]}
+          img={{src: inkt, alt: "Screenshot of inkt app"}}
+          wip
+        />
+      </li>
+
     </ul>
   </section>
 );
