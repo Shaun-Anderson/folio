@@ -55,7 +55,7 @@ const Things = () => (
       Things <i className="subheading">Projects, art and anything else I think of</i>
     </h3>
     <ul className="mason">
-    <li className="col-span-6">
+    <li className="col-6">
         <ThingCard
           link="https://github.com/Shaun-Anderson/folio"
           title="folio"
@@ -67,7 +67,7 @@ const Things = () => (
         />
       </li>
 
-      <li className="col-span-3">
+      <li className="col-3">
         <ThingCard
           link="https://figcv.com"
           title="figcv"
@@ -81,7 +81,7 @@ const Things = () => (
       <li className="art">
         <img src={mage.src} alt="A description of my image."/>
       </li>
-      <li className="col-span-3">
+      <li className="col-3">
         <ThingCard
           link="https://breadd.app"
           title="Breadd.app"
@@ -94,7 +94,7 @@ const Things = () => (
 
         />
       </li>
-      <li className="col-span-6">
+      <li className="col-6">
       <ThingCard
           link="https://twitter.com/ando_null/status/1767468325838487788"
           title="inkt"
