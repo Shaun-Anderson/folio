@@ -2,7 +2,6 @@ import "../styles/things.css";
 import inkt from "../assets/inkt-wip.webp"; // Image is 1600x900
 import mage from "../assets/mage.png"; // Image is 1600x900
 import solr from "../assets/solr-wip.webp"; // Image is 1600x900
-import Image from "astro/components/Image.astro";
 
 
 type ThingCardProps = {
