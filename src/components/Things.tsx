@@ -79,7 +79,7 @@ const Things = () => (
         />
       </li>
       <li className="art">
-        <img src={mage.src} alt="A description of my image."/>
+        <img src={mage} alt="A description of my image."/>
       </li>
       <li className="col-3">
         <ThingCard
